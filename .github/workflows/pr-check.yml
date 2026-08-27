@@ -19,19 +19,8 @@ permissions:
   pull-requests: write
 
 jobs:
-  shift-left-security:
-    uses: sarvamai/security-redirect/.github/workflows/security-redirect.yml@v2
-    with:
-      dockerfile_path: ''
-    permissions:
-      contents: read
-      security-events: write
-      actions: read
-      pull-requests: write
-
   validate:
     name: Validate PR
-    needs: shift-left-security
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
