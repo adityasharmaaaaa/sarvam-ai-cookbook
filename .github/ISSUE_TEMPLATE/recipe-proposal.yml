@@ -1,7 +1,7 @@
 name: "Recipe / example proposal"
 description: "Propose a new notebook, script, or end-to-end example for the cookbook."
 title: "[Recipe]: "
-labels: ["enhancement", "new-recipe"]
+labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
